@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmer Ahmed – Contact</title>
+    <style>
+      body { background-color: #f5f5f5; margin: 0; font-family: Arial, Helvetica, sans-serif; color: #333; }
+      .card { max-width: 920px; margin: 3rem auto; background: #fff; border: 1px solid #eaeaea; border-radius: 8px; overflow: hidden; }
+      .top-row { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+      .name { font-weight: bold; font-size: 1.1rem; display: flex; align-items: center; }
+      .name .dot { width: 10px; height: 10px; border-radius: 50%; background: #f5c543; margin-right: 0.5rem; }
+      .nav-links a { margin-left: 1.5rem; text-decoration: none; color: #666; font-size: 0.9rem; }
+      .nav-links a:hover { color: #000; }
+      .content { padding: 2rem; }
+      .content h2 { margin-top: 0; margin-bottom: 1rem; }
+      .content p { margin-bottom: 2rem; color: #555; }
+      form { max-width: 500px; display: flex; flex-direction: column; gap: 1rem; }
+      label { font-size: 0.9rem; margin-bottom: 0.25rem; color: #333; }
+      input, textarea { padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; font-size: 0.9rem; }
+      textarea { resize: vertical; min-height: 120px; }
+      button { align-self: flex-start; background: #fdd7d3; color: #333; border: none; border-radius: 50px; padding: 0.6rem 1.2rem; font-weight: bold; cursor: pointer; transition: background-color 0.2s ease-in-out; }
+      button:hover { background: #f9b5b2; }
+      .bottom-row { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; font-size: 0.8rem; color: #666; border-top: 1px solid #eaeaea; }
+      .bottom-left { display: flex; gap: 2rem; }
+      .bottom-left .detail { display: flex; flex-direction: column; }
+      .bottom-left .detail span:first-child { text-transform: uppercase; font-size: 0.7rem; color: #999; }
+      .follow { text-align: center; }
+      .follow a { text-decoration: none; color: #333; margin: 0 0.25rem; }
+      .credits { text-align: right; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="top-row">
+        <div class="name"><span class="dot"></span>Ahmer Ahmed</div>
+        <div class="nav-links">
+          <a href="resume.html">Resume</a>
+          <a href="work">Work</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="content">
+        <h2>Get in Touch</h2>
+        <p>
+          Whether you need fresh website copy, a strategic plan or simply want
+          to discuss an idea, feel free to reach out. I read every message and
+          will respond promptly.
+        </p>
+        <form action="mailto:contact@adsdigital.agency" method="post" enctype="text/plain">
+          <div>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div class="bottom-row">
+        <div class="bottom-left">
+          <div class="detail"><span>Phone</span><span>+971 50 152 1196</span></div>
+          <div class="detail"><span>Email</span><span>contact@adsdigital.agency</span></div>
+        </div>
+        <div class="follow"><span>Follow Me</span><br /><a href="https://www.linkedin.com/in/ahmerahmed/" target="_blank">LinkedIn</a></div>
+        <div class="credits">© 2025 Ahmer Ahmed.</div>
+      </div>
+    </div>
+  </body>
+</html>
